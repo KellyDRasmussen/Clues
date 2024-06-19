@@ -1,3 +1,38 @@
+# Salsa20 Decryption Example
+
+This repository chronicles my journey to decrypt a message using the Salsa20 stream cipher with a SHA256 hash as the key.
+
+## Background
+
+This time last year, there was a social media challenge to decrypt a bunch of clues as part of a promotion for open positions at FE.
+
+I got stuck in and used ChatGPT to bring me up to speed on things like what a SHA256 hash is and what a nonce is.
+
+I found someone else who was stuck on LinkedIn, and with his Python skills and my ... desire to solve the puzzle, we got there together. We must have pored over every detail in the campaign but we didn't know HOW it was encrypted. Eventually, we both clicked at the same time and realised it was weird that they had employees talking about how much they loved their Salsa class that some people had attended for 20 years.
+
+He coded it himself, I asked ChatGPT but it just wouldn't work whatever I did.
+
+## This Year
+
+This year, I wanted to see if the new ChatGPT model could make a dent. I still had all the clues in my GitHub, so my prompt was:
+
+"help me decrypt something
+It's salsa 20
+the cypher is: d7a7e396df976cf6c59adce5d1381ea020a35af126efd0d5d380e4ccb74758e0f05e86a0bed61ac75d5a1dfd029c8792ced99c5abf33354505e288f0b9bda280c9099506be3c3ee818b5e405e1fbf45903708cd067cafa34aa5f5b88958ae6603b4a427ab2
+the SHA256 hash of key: 7980a97a11e2b99636133b9baf922de286d3cf893843537f255ab0af56982985
+the nonce is zero"
+
+and then I needed an extra prompt of
+
+"you don't need the key, just use the hash"
+
+and boooooom: here it is, no python required.
+## Official Solution
+
+Here's their official solution: [FE's Write-up on the Kryptokampagne 2023](https://www.fe-ddis.dk/globalassets/fe/dokumenter/2024/andet/-write-up-kryptokampagne-2023-.pdf)
+
+
+
 # Clues
 Ymzj ul yri silx wfi yarvcg jrr yri Alczv efxcv yzekj 
 Hvis du har brug for hjaelp saa har Julie nogle hints
