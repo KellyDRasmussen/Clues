@@ -1,6 +1,6 @@
 # Salsa20 Decryption Example
 
-This repository chronicles my journey to decrypt a message using the Salsa20 stream cipher with a SHA256 hash as the key.
+This is about my 'journey' to decrypt a message using the Salsa20 stream cipher with a SHA256 hash as the key.
 
 ## Background
 
